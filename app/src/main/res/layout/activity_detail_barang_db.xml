@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/detailbarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/carter_one"
+            android:text="Detail Barang"
+            android:textColor="#222831"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/gambar_barang"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/detailbarang"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/foto" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/gambar_barang"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_below="@id/detailbarang"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:text="gambar" />-->
+
+        <TextView
+            android:id="@+id/kode_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar_barang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/abeezee"
+            android:text="kode barang"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#222831"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kode_barang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="nama barang"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#222831"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/harga_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_barang"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="harga menu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#222831"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/satuan_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga_barang"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alata"
+            android:text="satuan menu"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#222831"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/stok_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/satuan_barang"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alata"
+            android:text="stok menu"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#222831"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/jumlah_beli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stok_barang"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/total_pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlah_beli"
+            android:layout_centerHorizontal="true"
+            android:text="total pesan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#222831"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_pesan"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/tblpesanmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_pesan"
+                android:text="PESAN"
+                android:textColor="@color/black"
+                android:backgroundTint="#00ADB5"/>
+
+            <Button
+                android:id="@+id/tblkembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_pesan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tblpesanmenu"
+                android:text="BATAL"
+                android:backgroundTint="#00ADB5"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

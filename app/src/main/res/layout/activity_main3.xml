@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEEEE"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/ptnim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="PT.  A11.2021.13905 "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/namatoko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ptnim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Penjualan Sparepart Kendaraan BERMOTOR "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/garis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namatoko"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="================================================" />
+
+    <TextView
+        android:id="@+id/namanota"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Nama          :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/namanotaisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/namanota"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alamatnota"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namanota"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Alamat        :" />
+
+    <TextView
+        android:id="@+id/alamatnotaisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namanotaisi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/alamatnota"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="alamat"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/pekerjaannota"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamatnota"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Pekerjaan   :" />
+
+    <TextView
+        android:id="@+id/pekerjaannotaisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamatnotaisi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/alamatnota"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="pekerjaan"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/beliunit"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pekerjaannota"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:layout_marginTop="20dp"
+        android:text="Beli Unit      :" />
+
+    <TextView
+        android:id="@+id/beliunitisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pekerjaannotaisi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/beliunit"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="beli unit"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hargaunit"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beliunit"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:layout_marginTop="20dp"
+        android:text="Harga          :" />
+
+    <TextView
+        android:id="@+id/hargaunitisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beliunitisi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/hargaunit"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="harga"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jumlahunit"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hargaunit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Jumlah       :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jumlahunitisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hargaunitisi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/jumlahunit"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="jumlah"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalhrgunit"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumlahunit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Total            :" />
+
+    <TextView
+        android:id="@+id/totalhrgunitisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumlahunit"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/totalhrgunit"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="total"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ppnhrg"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalhrgunit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="PPN              :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ppnhrgisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalhrgunit"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/ppnhrg"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="ppn"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalbyr"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ppnhrg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="Bayar           :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalbyrisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ppnhrgisi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/hargaunit"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="bayar"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/penutupan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalbyr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noticia_text_bold"
+        android:text="TERIMA KASIH SUDAH MEMPERCAYAI KAMI :) " />
+
+</RelativeLayout>
